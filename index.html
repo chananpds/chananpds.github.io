@@ -242,40 +242,19 @@ goods are transported to site in a timely manner.</p>
                     <h3 class="section-subheading text-muted">"Get in touch with us and let us know how we can work together"</h3>
                 </div>
             </div>
-                               <?php
-  if (isset($_REQUEST['submit']))  {
+                              
 
-  //Email information
-  $admin_email = "someone@example.com";
-  $name = $_REQUEST['name'];
-  $email = $_REQUEST['email'];
-  $phone = $_REQUEST['phone'];
-  $message = strip_tags($_REQUEST['message']);
-  $subject = "message from customer";
-
-  //send email
-  mail($admin_email, "$subject", $message + $phone , "From:" . $email);
-
-  //Email response
-  echo "<p>Thank you for contacting us!</p>";
-  }
-
-
-                    ?>
-    else{
             <div class="row">
-                <div class="col-lg-12">
+               
                     <form name="sentMessage" id="contactForm" method="post" action="<?php echo $_SERVER['PHP_SELF']?>" novalidate>
 
                         <div class="row">
-                            <h1>0574469227</h1>
+                            <h1><font color="white">0574469227</font></h1>
+                            <h1><font color="white">0574469227</font></h1>
                     </form>
 
                 </div>
-            </div>
-            <?php
-                }
-            ?>
+            
         </div>
     </section>
 
